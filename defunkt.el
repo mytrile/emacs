@@ -1,5 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
-
+(add-to-list 'load-path "~/.emacs.d/vendor/rhtml")
+(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet")
 ; custom place to save customizations
 (setq custom-file "~/.emacs.d/defunkt/custom.el")
 (load custom-file)
@@ -25,3 +26,6 @@
 (vendor 'textmate)
 (textmate-mode)
 (vendor 'yaml-mode)
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")
