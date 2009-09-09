@@ -20,7 +20,6 @@
 (vendor 'cheat)
 (vendor 'magit)
 (vendor 'gist)
-(vendor 'growl)
 (vendor 'twittering-mode)
 (vendor 'textile-mode)
 (vendor 'textmate)
