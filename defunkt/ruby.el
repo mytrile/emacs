@@ -16,7 +16,7 @@
 (setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rake" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.god" . ruby-mode) auto-mode-alist))
-
+(setq auto-mode-alist (cons '("\\.ru" . ruby0mode) auto-mode-alist))
 ;; no warnings when compiling
 (setq ruby-dbg-flags "")
 
