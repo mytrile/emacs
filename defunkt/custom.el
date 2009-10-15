@@ -17,7 +17,6 @@
 (set-scroll-bar-mode 'right)
 (setq make-backup-files nil) ; stop creating those backup~ files 
 (setq auto-save-default nil) ; stop creating those #autosave# files 
-
 (defun arrange-frame (w h x y)
   "Set the width, height, and x/y position of the current frame"
   (let ((frame (selected-frame)))
@@ -25,6 +24,8 @@
     (set-frame-position frame x y)
     (set-frame-size frame w h)))
  
- 
 (arrange-frame 115 30 50 150)
 
+;; Global key binding
+(global-set-key (kbd "M-s") 'save-buffer)
+(global-set-key (kbd "M-z") 'undo)
