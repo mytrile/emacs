@@ -5,7 +5,6 @@
 (load "defunkt/javascript")
 (load "defunkt/python")
 (load "defunkt/erc")
-
 ; bash
 (setq auto-mode-alist (cons '("\\.bashrc" . sh-mode) auto-mode-alist))
 
