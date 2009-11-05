@@ -29,3 +29,5 @@
 ;; Global key binding
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-z") 'undo)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
