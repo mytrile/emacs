@@ -26,5 +26,6 @@
 (vendor 'yaml-mode)
 (vendor 'haml-mode)
 (vendor 'yasnippet)
+(vendor 'tpl-mode)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")

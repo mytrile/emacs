@@ -66,3 +66,10 @@
           '(lambda ()
              (setq c-auto-newline t)
              (define-key c-mode-map "{" 'defunkt/c-electric-brace)))
+; mustache
+(add-to-list 'auto-mode-alist '("\\.mustache$" . tpl-mode))
+(add-hook 'tpl-mode-hook '(lambda () (font-lock-mode 1)))
+
+(setq show-trailing-whitespace (not buffer-read-only))
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
