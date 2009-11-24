@@ -22,3 +22,6 @@
 [submodule "vendor/yaml-mode.el"]
 	path = vendor/yaml-mode.el
 	url = git://github.com/yoshiki/yaml-mode.git
+[submodule "vendor/rspec-mode"]
+path = vendor/rspec-mode
+url = git://github.com/pezra/rspec-mode.git

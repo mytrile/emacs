@@ -70,6 +70,9 @@
 (add-to-list 'auto-mode-alist '("\\.mustache$" . tpl-mode))
 (add-hook 'tpl-mode-hook '(lambda () (font-lock-mode 1)))
 
+; cucumber mode
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
 (setq show-trailing-whitespace (not buffer-read-only))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
