@@ -29,5 +29,6 @@
 (vendor 'tpl-mode)
 (vendor 'feature-mode)
 (vendor 'rspec-mode)
+(require 'rhtml-mode)
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")

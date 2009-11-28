@@ -6,9 +6,6 @@
 ;; ;; make this file load other version-controlled files.
 (load "defunkt")
 
-(add-to-list 'load-path "~/.emacs.d/vendor/rhtml")
-(require 'rhtml-mode)
 
 (load "color-theme-blazer")
 (color-theme-blazer)
-

@@ -5,6 +5,8 @@
 (load "defunkt/javascript")
 (load "defunkt/python")
 (load "defunkt/erc")
+(load "defunkt/clojure")
+
 ; bash
 (setq auto-mode-alist (cons '("\\.bashrc" . sh-mode) auto-mode-alist))
 
@@ -24,8 +26,8 @@
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
-(add-hook 'markdown-mode-hook 
-          '(lambda () 
+(add-hook 'markdown-mode-hook
+          '(lambda ()
              (define-key markdown-mode-map (kbd "<tab>") 'defunkt-indent)))
 
 ; paredit
@@ -62,7 +64,7 @@
 
 
 ; c
-(add-hook 'c-mode-hook 
+(add-hook 'c-mode-hook
           '(lambda ()
              (setq c-auto-newline t)
              (define-key c-mode-map "{" 'defunkt/c-electric-brace)))
