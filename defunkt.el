@@ -1,6 +1,6 @@
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "~/.emacs.d/vendor/rhtml")
-
+(add-to-list 'load-path "~/.emacs.d/vendor/mustache-mode.el")
 ; custom place to save customizations
 (setq custom-file "~/.emacs.d/defunkt/custom.el")
 (load custom-file)
@@ -22,13 +22,7 @@
 (vendor 'gist)
 (vendor 'textile-mode)
 (vendor 'textmate)
-(textmate-mode)
 (vendor 'yaml-mode)
 (vendor 'haml-mode)
-(vendor 'yasnippet)
-(vendor 'tpl-mode)
 (vendor 'feature-mode)
-(vendor 'rspec-mode)
 (require 'rhtml-mode)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/vendor/yasnippet/snippets")

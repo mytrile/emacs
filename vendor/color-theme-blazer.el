@@ -21,7 +21,7 @@
   (interactive)
   (color-theme-install
 	'(color-theme-blazer
-	  ((background-color . "#0f0f0f")
+	  ((background-color . "#080808")
 		(background-mode . dark)
 		(border-color . "black")
 		(cursor-color . "#A7A7A7")

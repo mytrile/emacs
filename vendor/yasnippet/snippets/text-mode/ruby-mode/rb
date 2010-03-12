@@ -1,4 +1,0 @@
-#name : /usr/bin/env ruby -wKU
-#group : general
-# --
-#!/usr/bin/env ruby -wKU

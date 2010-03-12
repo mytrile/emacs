@@ -6,12 +6,14 @@
 (load "defunkt/python")
 (load "defunkt/erc")
 (load "defunkt/clojure")
-
+(load "defunkt/coffee")
+(load "defunkt/markdown")
+(load "defunkt/mustache")
 ; bash
 (setq auto-mode-alist (cons '("\\.bashrc" . sh-mode) auto-mode-alist))
 
 ; obj-c
-(setq auto-mode-alist (cons '("\\.m" . objc-mode) auto-mode-alist))
+; (setq auto-mode-alist (cons '("\\.m" . objc-mode) auto-mode-alist))
 ;; (setq c-default-style "bsd" c-basic-offset 2)
 
 ; magit
@@ -19,16 +21,6 @@
   '(progn
      (set-face-foreground 'magit-diff-add "green3")
      (set-face-foreground 'magit-diff-del "red3")))
-
-; markdown
-(add-to-list 'load-path "~/.emacs.d/vendor/markdown-mode")
-(autoload 'markdown-mode "markdown-mode.el"
-   "Major mode for editing Markdown files" t)
-(setq auto-mode-alist (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
-(add-hook 'markdown-mode-hook
-          '(lambda ()
-             (define-key markdown-mode-map (kbd "<tab>") 'defunkt-indent)))
 
 ; paredit
 (autoload 'paredit-mode "paredit"
@@ -68,13 +60,21 @@
           '(lambda ()
              (setq c-auto-newline t)
              (define-key c-mode-map "{" 'defunkt/c-electric-brace)))
-; mustache
-(add-to-list 'auto-mode-alist '("\\.mustache$" . tpl-mode))
-(add-hook 'tpl-mode-hook '(lambda () (font-lock-mode 1)))
 
 ; cucumber mode
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
+;textile mode
+(add-to-list 'auto-mode-alist '("\.textile$" . textile-mode))
+
+; coffee mode
+
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
 (setq show-trailing-whitespace (not buffer-read-only))
 
+(vendor 'textmate)
+(textmate-mode)
+(setq textmate-find-files-command "git ls-tree --full-tree --name-only -r HEAD")
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
