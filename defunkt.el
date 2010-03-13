@@ -26,3 +26,4 @@
 (vendor 'haml-mode)
 (vendor 'feature-mode)
 (require 'rhtml-mode)
+(require 'jekyll)
