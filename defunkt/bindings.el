@@ -12,9 +12,9 @@
 (global-set-key "\C-x\C-g" 'github-ido-find-file)
 (global-set-key "\C-R" 'replace-string)
 (global-set-key [M-return] 'defunkt-todo-done)
-
+(global-set-key "\C-x\C-k" 'copy-line)
 ; vim emulation
-(global-set-key [C-tab] 'other-window) 
+(global-set-key [C-tab] 'other-window)
 (global-set-key [M-up] 'defunkt-inc-num-at-point)
 (global-set-key [M-down] 'defunkt-dec-num-at-point)
 (global-set-key (kbd "C-*") 'isearch-forward-at-point)
@@ -24,7 +24,7 @@
 
 ; no printing!
 (when (boundp 'osx-key-mode-map)
- (define-key osx-key-mode-map (kbd "A-p") 
+ (define-key osx-key-mode-map (kbd "A-p")
    '(lambda () (interactive) (message "noop"))))
 
 ; no mailing!

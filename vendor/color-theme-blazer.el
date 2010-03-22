@@ -56,6 +56,7 @@
 	  (highline-face ((t (:background "SeaGreen"))))
 	  (italic ((t (nil))))
 	  (left-margin ((t (nil))))
+    (left-fringe ((t (:background "#000000" :foreground "#000000"))))
 	  (text-cursor ((t (:background "yellow" :foreground "black"))))
 	  (toolbar ((t (nil))))
 	  (underline ((nil (:underline nil))))

@@ -6,8 +6,8 @@
             (define-key rinari-minor-mode-map (kbd "A-r") 'rinari-test)))
 
 ; rhtml
-(setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.erb" . nxml-mode) auto-mode-alist))
+;(setq auto-mode-alist (cons '("\\.html\\.erb" . nxml-mode) auto-mode-alist))
+;(setq auto-mode-alist (cons '("\\.erb" . nxml-mode) auto-mode-alist))
 
 ; ruby
 (vendor 'ruby-hacks)

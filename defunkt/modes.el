@@ -74,9 +74,9 @@
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
 
-(setq show-trailing-whitespace (not buffer-read-only))
-
+; textmate-mpde
 (vendor 'textmate)
 (textmate-mode)
 (setq textmate-find-files-command "git ls-tree --full-tree --name-only -r HEAD")
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(setq show-trailing-whitespace (not buffer-read-only))

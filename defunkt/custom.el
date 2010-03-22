@@ -4,8 +4,6 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(cua-mode t nil (cua-base))
- '(display-battery-mode t)
  '(inhibit-startup-screen t)
  '(size-indication-mode t))
 (custom-set-faces
@@ -34,3 +32,8 @@
 
 (setq make-backup-files nil) ; stop creating those backup~ files
 (setq auto-save-default nil) ; stop creating those #auto-save# files
+
+(set-face-foreground 'fringe "white")
+(set-face-background 'fringe "#080808")
+
+(global-linum-mode)
