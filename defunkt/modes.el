@@ -5,7 +5,6 @@
 (load "defunkt/javascript")
 (load "defunkt/python")
 (load "defunkt/erc")
-(load "defunkt/clojure")
 (load "defunkt/coffee")
 (load "defunkt/markdown")
 (load "defunkt/mustache")

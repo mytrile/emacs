@@ -30,13 +30,13 @@
   "Relative path to drafts directory.")
 (defvar jekyll-posts-dir "_posts/"
   "Relative path to posts directory.")
-(defvar jekyll-post-ext ".markdown"
+(defvar jekyll-post-ext ".md"
   "File extension of Jekyll posts.")
 (defvar jekyll-post-author "Mitko Kostov"
   "Default post author")
 
 (defvar jekyll-post-template
-  (concat "---\nlayout: post\ntitle: %s\n---\n\n# {{page.title}}\n\n" (format-time-string "%Y-%m-%d - ") jekyll-post-author "\n\n")
+  (concat "---\nlayout: post\ntitle: %s\n---\n\n# {{page.title}}\n\n<p class='meta'>" (format-time-string "%Y-%m-%d - ") jekyll-post-author "</p>\n\n\n")
   "Default template for Jekyll posts.  %s will be replace by the post title.")
 
 (defun jekyll-deploy ()
