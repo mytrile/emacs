@@ -177,3 +177,4 @@ buffer read-only, so I suggest setting kill-read-only-ok to t."
   (toggle-read-only 0))
 
 (setq-default kill-read-only-ok t)
+(defalias 'yes-or-no-p 'y-or-n-p)
